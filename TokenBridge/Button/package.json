@@ -1,0 +1,41 @@
+{
+  "name": "nexus-button",
+  "version": "1.0.8",
+  "description": "A React component for moving funds on a bridge with tooltips and loading indicators.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Muhammad Umer",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "button",
+    "tooltip",
+    "funds",
+    "typescript"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.0.0",
+    "@tippyjs/react": "^4.2.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
