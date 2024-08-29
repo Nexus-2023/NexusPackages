@@ -1,5 +1,5 @@
 {
-  "name": "nexus-loader",
+  "name": "nexus-shadow",
   "version": "1.0.0",
   "description": "A customizable React Circle Shadowcomponent",
   "main": "dist/index.js",
@@ -16,8 +16,7 @@
   "license": "MIT",
   "keywords": [
     "react",
-    "skeleton",
-    "loader",
+    "shadow",
     "typescript"
   ],
   "dependencies": {

@@ -1,6 +1,6 @@
 import React from "react"
 
-import { MoveFundsButtonProps } from "./type"
+import { MoveFundsButtonProps } from "./types/type"
 import Tippy from "../node_modules/@tippyjs/react/index"
 import "node_modules/tippy.js/animations/scale.css"
 import "node_modules/tippy.js/themes/translucent.css"

@@ -1,5 +1,5 @@
 {
-  "name": "nexus-token-input-field",
+  "name": "nexus-token-input",
   "version": "1.0.0",
   "description": "React component to select token from token dropdown and enter its amount",
   "main": "dist/index.js",

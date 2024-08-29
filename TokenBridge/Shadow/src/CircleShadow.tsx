@@ -1,5 +1,5 @@
 import React from "react"
-import { CircleShadowProps } from "./type"
+import { CircleShadowProps } from "./types/index"
 
 const CircleShadow: React.FC<CircleShadowProps> = ({
   color = "var(--circle-shadow)",

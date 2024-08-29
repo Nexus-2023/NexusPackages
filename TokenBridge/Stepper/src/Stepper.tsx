@@ -6,7 +6,7 @@ import {
   StepLabel,
   Divider,
 } from "../node_modules/@mui/material/index"
-import { VerticalLinearStepperProps } from "./type"
+import { VerticalLinearStepperProps } from "./types/index"
 export function VerticalLinearStepper({
   activeStep,
   selectedToken,
