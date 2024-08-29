@@ -30,3 +30,8 @@ Stepper : npm i nexus-stepper
 InputFields : npm i nexus-token-input-field
 
 ```
+All packages
+
+```
+npm i nexusfooter nexusnavbar nexus-button nexusdropdown nexus-token-input nexus-loader nexus-shadow nexus-stepper nexus-token-input-field
+```
