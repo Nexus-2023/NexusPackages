@@ -1,7 +1,7 @@
 {
   "name": "nexus-loader",
   "version": "1.0.0",
-  "description": "A customizable React skeleton loader component",
+  "description": "A customizable React Circle Shadowcomponent",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -21,9 +21,6 @@
     "typescript"
   ],
   "dependencies": {
-    "@mui/material": "^5.0.0",
-    "@emotion/react": "^11.0.0",
-    "@emotion/styled": "^11.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -37,7 +34,6 @@
     "react-dom": "^18.0.0"
   },
   "files": [
-    "dist",
-    "src/styles/index.css"
+    "dist"
   ]
 }

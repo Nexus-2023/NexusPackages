@@ -1,9 +1,8 @@
-export interface SkeletonLoaderProps {
-  variant?: "text" | "rounded"
-  width?: number
-  height?: number
-  LoaderBgColor?: string
-  LoaderForegroundColor?: string
-  ContainerBgColor?: string
-  borderRadius?: string
+export interface CircleShadowProps {
+  color?: string
+  height?: string
+  width?: string
+  opacity?: number
+  blur?: string
+  rounded?: string
 }
