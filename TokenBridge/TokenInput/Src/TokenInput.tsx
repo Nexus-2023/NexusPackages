@@ -1,10 +1,9 @@
 import React from "react"
 import { TokenInputMaxProps } from "./types/index"
 import TokenSelecterDropdown from "./Tokenselector"
-import { AddressInputProps } from "./types/index"
-import Tippy from "../node_modules/@tippyjs/react/index"
-import "node_modules/tippy.js/animations/scale.css"
-import "node_modules/tippy.js/themes/translucent.css"
+import Tippy from "@tippyjs/react"
+import "tippy.js/animations/scale.css"
+import "tippy.js/themes/translucent.css"
 
 export const TokenInputMax: React.FC<TokenInputMaxProps> = ({
   TokenSelecterProps,

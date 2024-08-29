@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "declaration": true,
-    "module": "ESNext",
-    "target": "ES5",
+    "target": "ES6",
+    "module": "commonjs",
     "jsx": "react",
+    "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "baseUrl": "./", // Base URL for resolving non-relative module names
+    "paths": {
+      "@/*": ["src/*"] // Alias for imports, you can remove this if not needed
+    }
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*.ts", // Include all TypeScript files in src directory
+    "src/**/*.tsx", // Include all TSX (React) files in src directory
+    "src/types/**/*.ts" // Include all TypeScript files in the types directory
+  ]
 }

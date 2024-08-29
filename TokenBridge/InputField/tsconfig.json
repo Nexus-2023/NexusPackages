@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "declaration": true,
-    "module": "ESNext",
-    "target": "ES5",
+    "target": "ES6",
+    "module": "commonjs",
     "jsx": "react",
+    "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/types/**/*.ts"]
 }

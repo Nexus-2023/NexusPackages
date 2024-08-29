@@ -4,14 +4,15 @@ import {
   Transition,
   PopoverButton,
   PopoverPanel,
-} from "../node_modules/@headlessui/react/dist/index"
-import Image, { StaticImageData } from "../node_modules/next/image"
+} from "@headlessui/react/dist/index"
+
+import Image, { StaticImageData } from "next/image"
 import { TokenSelectorProps } from "./types/index"
-import { Close, ExpandMore } from "../node_modules/@mui/icons-material/index"
+import { Close, ExpandMore } from "@mui/icons-material"
 import { TokenRow } from "./TokenRow"
-import Tippy from "../node_modules/@tippyjs/react/index"
-import "node_modules/tippy.js/animations/scale.css"
-import "node_modules/tippy.js/themes/translucent.css"
+import Tippy from "@tippyjs/react"
+import "tippy.js/animations/scale.css"
+import "tippy.js/themes/translucent.css"
 
 const TokenSelecterDropdown: React.FC<TokenSelectorProps> = ({
   TokenList,

@@ -1,8 +1,8 @@
 import React from "react"
-import { ExpandMore } from "../node_modules/@mui/icons-material/index"
-import Tippy from "../node_modules/@tippyjs/react/index"
-import "node_modules/tippy.js/animations/scale.css"
-import "node_modules/tippy.js/themes/translucent.css"
+import { ExpandMore } from "@mui/icons-material"
+import Tippy from "@tippyjs/react"
+import "tippy.js/animations/scale.css"
+import "tippy.js/themes/translucent.css"
 import { AddressInput } from "./AddressInput"
 import { AddressInputProps } from "./types/index"
 

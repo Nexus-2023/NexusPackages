@@ -1,10 +1,10 @@
 import React from "react"
 
 import { MoveFundsButtonProps } from "./types/type"
-import Tippy from "../node_modules/@tippyjs/react/index"
-import "node_modules/tippy.js/animations/scale.css"
-import "node_modules/tippy.js/themes/translucent.css"
-import { CircularProgress } from "../node_modules/@mui/material/index"
+import Tippy from "@tippyjs/react"
+import "tippy.js/animations/scale.css"
+import "tippy.js/themes/translucent.css"
+import { CircularProgress } from "@mui/material"
 
 export const MoveFundsButton: React.FC<MoveFundsButtonProps> = ({
   isConnected,

@@ -1,11 +1,6 @@
 import * as React from "react"
-import {
-  Box,
-  Stepper,
-  Step,
-  StepLabel,
-  Divider,
-} from "../node_modules/@mui/material/index"
+import { Box, Stepper, Step, StepLabel, Divider } from "@mui/material"
+
 import { VerticalLinearStepperProps } from "./types/index"
 export function VerticalLinearStepper({
   activeStep,

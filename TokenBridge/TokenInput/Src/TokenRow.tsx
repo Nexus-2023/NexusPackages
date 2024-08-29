@@ -1,7 +1,7 @@
 import { TokenRowProps } from "./types/index"
-import Image, { StaticImageData } from "../node_modules/next/image"
+import Image, { StaticImageData } from "next/image"
 import { AnimatedLinkProps } from "./types/index"
-import Link from "../node_modules/next/link"
+import Link from "next/link"
 import React from "react"
 
 export const AnimatedLink: React.FC<AnimatedLinkProps> = ({

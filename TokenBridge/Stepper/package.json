@@ -1,6 +1,6 @@
 {
   "name": "nexus-stepper",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A stepper component to show transaction progress",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

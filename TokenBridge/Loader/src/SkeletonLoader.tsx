@@ -1,7 +1,7 @@
 import React from "react"
-import { Skeleton } from "../node_modules/@mui/material/index"
+import { Skeleton } from "@mui/material"
 import { SkeletonLoaderProps } from "./types/type"
-import "./styles/index.css"
+
 export default function SkeletonLoader({
   variant = "rounded",
   width = 500,
