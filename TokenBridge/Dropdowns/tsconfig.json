@@ -1,0 +1,31 @@
+
+  {
+    "compilerOptions": {
+      "target": "ES5",                                // Compiles to ES5 for older browser support.
+      "module": "ESNext",                             // Uses ESNext modules.
+      "jsx": "react-jsx",                             // Uses the modern JSX transform (React 17+).
+      "strict": true,                                 // Enables all strict type-checking options.
+      "esModuleInterop": true,                        // Ensures compatibility between CommonJS and ES Modules.
+      "forceConsistentCasingInFileNames": true,       // Enforces consistent file name casing.
+      "skipLibCheck": true,                           // Skips type checking of declaration files.
+      "moduleResolution": "node",                     // Uses Node.js-style resolution for modules.
+      "allowSyntheticDefaultImports": true,           // Allows default imports from modules without default exports.
+      "isolatedModules": true,                        // Ensures each file is transpiled independently.
+      "resolveJsonModule": true,                      // Enables importing of JSON files.
+      "declaration": true,                            // Generates `.d.ts` declaration files.
+      "outDir": "./dist",                             // Outputs compiled files to the `dist` directory.
+      "baseUrl": "./",                                // Base directory for module resolution.
+      "paths": {                                      // Path aliases for cleaner imports.
+        "@/*": ["src/*"]
+      }
+    },
+    "include": [
+      "src/**/*",                                     // Includes all files in the `src` directory.
+      "next-env.d.ts"                                 // Includes Next.js type definitions.
+    ],
+    "exclude": [
+      "node_modules",                                 // Excludes `node_modules` directory.
+      "dist"                                          // Excludes `dist` directory.
+    ]
+  }
+  

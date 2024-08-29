@@ -1,0 +1,32 @@
+{
+  "name": "nexusnavbar",
+  "version": "1.0.17",
+  "description": "A responsive app bar component for Nexus .",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Utkarsh Varshney",
+  "license": "MIT",
+  "dependencies": {
+    "@mui/icons-material": "^x.x.x",
+    "@mui/material": "^x.x.x",
+    "next": "^x.x.x",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.0"
+  },
+  "peerDependencies": {
+    "@mui/material": "^x.x.x"
+  },
+  "devDependencies": {
+    "typescript": "^x.x.x"
+  },
+  "keywords": [
+    "react",
+    "mui",
+    "component",
+    "nexusnavbar"
+  ]
+}
