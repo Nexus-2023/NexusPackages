@@ -1,7 +1,7 @@
 {
-  "name": "nexus-button",
+  "name": "nexus-loader",
   "version": "1.0.0",
-  "description": "A React component for moving funds on a bridge with tooltips and loading indicators.",
+  "description": "A customizable React skeleton loader component",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -16,16 +16,14 @@
   "license": "MIT",
   "keywords": [
     "react",
-    "button",
-    "tooltip",
-    "funds",
+    "skeleton",
+    "loader",
     "typescript"
   ],
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/material": "^6.0.0",
-    "@tippyjs/react": "^4.2.6",
+    "@mui/material": "^5.0.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -37,5 +35,9 @@
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
-  }
+  },
+  "files": [
+    "dist",
+    "src/styles/index.css"
+  ]
 }
