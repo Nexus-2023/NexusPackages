@@ -2,7 +2,7 @@ import React from "react"
 import { Skeleton } from "@mui/material"
 import { SkeletonLoaderProps } from "./types/type"
 
-export default function SkeletonLoader({
+function SkeletonLoader({
   variant = "rounded",
   width = 500,
   height = 100,
@@ -88,3 +88,5 @@ export default function SkeletonLoader({
     </div>
   )
 }
+
+export default SkeletonLoader

@@ -1,3 +1,1 @@
-import { TokenInputMax } from "./TokenInput"
-
-export default TokenInputMax
+export { default } from "./TokenInput"

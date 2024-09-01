@@ -1,3 +1,1 @@
-import CircleShadow from "./CircleShadow"
-
-export default CircleShadow
+export { default as CircleShadow } from "./CircleShadow"
