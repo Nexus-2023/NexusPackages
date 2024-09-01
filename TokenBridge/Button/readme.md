@@ -4,7 +4,7 @@ MoveFundsButton is a customizable React button component designed for use in blo
 
 ### Usage
 
-```
+```jsx
 import { MoveFundsButton } from "nexus-button"
 
 function App() {
