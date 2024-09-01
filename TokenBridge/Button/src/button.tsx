@@ -1,12 +1,20 @@
 import React from "react"
 
-import { MoveFundsButtonProps } from "./types/type"
-import Tippy from "@tippyjs/react"
-import "tippy.js/animations/scale.css"
-import "tippy.js/themes/translucent.css"
 import { CircularProgress } from "@mui/material"
 
-export const MoveFundsButton: React.FC<MoveFundsButtonProps> = ({
+interface MoveFundsButtonProps {
+  isConnected: boolean
+  textColor?: string
+  destinationChain: string
+  bgConnected?: string
+  bgDisabled?: string
+  rounded?: string
+  onClick: any
+  transferring: boolean
+  mode: "Deposit" | "Withdraw" | "Unknown"
+}
+
+function MoveFundsButton({
   isConnected,
   destinationChain,
   textColor = "white",
@@ -16,48 +24,36 @@ export const MoveFundsButton: React.FC<MoveFundsButtonProps> = ({
   onClick,
   mode,
   transferring,
-}) => {
+}: MoveFundsButtonProps) {
   return (
     <>
       {mode === "Deposit" ? (
         <>
-          <Tippy
-            placement="top"
-            animateFill={true}
-            animation={"scale"}
-            theme="translucent"
-            content={
-              isConnected
-                ? `${mode} to ${destinationChain}`
-                : " Please connect wallet"
-            }
+          <button
+            style={{
+              padding: "0.7rem 1rem",
+              width: "100%",
+              color: textColor,
+              backgroundColor: isConnected ? bgConnected : bgDisabled,
+              borderRadius: rounded,
+              cursor:
+                isConnected && transferring === false
+                  ? "pointer"
+                  : "not-allowed",
+              maxWidth: "35rem",
+            }}
+            className="focus:outline-none"
+            onClick={onClick}
           >
-            <button
-              style={{
-                padding: "0.7rem 1rem",
-                width: "100%",
-                color: textColor,
-                backgroundColor: isConnected ? bgConnected : bgDisabled,
-                borderRadius: rounded,
-                cursor:
-                  isConnected && transferring === false
-                    ? "pointer"
-                    : "not-allowed",
-                maxWidth: "35rem",
-              }}
-              className="focus:outline-none"
-              onClick={onClick}
-            >
-              {transferring ? (
-                <div className="flex items-center justify-center space-x-3">
-                  <h1>Transferring </h1>
-                  <CircularProgress sx={{ color: "white" }} size={20} />
-                </div>
-              ) : (
-                <>{mode} Amount</>
-              )}
-            </button>
-          </Tippy>
+            {transferring ? (
+              <div className="flex items-center justify-center space-x-3">
+                <h1>Transferring </h1>
+                <CircularProgress sx={{ color: "white" }} size={20} />
+              </div>
+            ) : (
+              <>{mode} Amount</>
+            )}
+          </button>
         </>
       ) : (
         <>
@@ -80,3 +76,5 @@ export const MoveFundsButton: React.FC<MoveFundsButtonProps> = ({
     </>
   )
 }
+
+export default MoveFundsButton

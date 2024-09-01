@@ -1,3 +1,1 @@
-import { MoveFundsButton } from "./button"
-
-export default MoveFundsButton
+export { default as MoveFundsButton } from "./button"
