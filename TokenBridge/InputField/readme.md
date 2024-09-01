@@ -4,7 +4,7 @@ AddressAccordian is a React component that provides an expandable section for en
 
 ## usage
 
-```
+```jsx
 import { AddressAccordian } from "nexus-token-input-field"
 
 function App() {
