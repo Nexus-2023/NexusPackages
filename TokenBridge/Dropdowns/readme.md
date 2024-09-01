@@ -6,7 +6,7 @@ The `NetworkSelecterDropdown` component is a customizable dropdown menu for sele
 
 ## USAGE
 
-```bash
+```jsx
 import React from "react";
 import NetworkSelecterDropdown from "./NetworkSelecterDropdown";
 
