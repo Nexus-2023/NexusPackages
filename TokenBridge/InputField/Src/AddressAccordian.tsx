@@ -1,12 +1,9 @@
 import React from "react"
 import { ExpandMore } from "@mui/icons-material"
-import Tippy from "@tippyjs/react"
-import "tippy.js/animations/scale.css"
-import "tippy.js/themes/translucent.css"
-import { AddressInput } from "./AddressInput"
+import AddressInput from "./AddressInput"
 import { AddressInputProps } from "./types/index"
 
-export const AddressAccordian: React.FC<AddressInputProps> = ({
+const AddressAccordian: React.FC<AddressInputProps> = ({
   label,
   address,
   handleAddress,
@@ -18,22 +15,14 @@ export const AddressAccordian: React.FC<AddressInputProps> = ({
       <>
         <div className="flex  justify-end  items-center -mr-2 -mt-1">
           Destination Address
-          <Tippy
-            content={`Custom address`}
-            placement="right"
-            animateFill={true}
-            animation={"scale"}
-            theme="translucent"
-          >
-            <button onClick={() => setOpen(!open)}>
-              <ExpandMore
-                sx={{ fontSize: 25 }}
-                className={`ml-1 transition-all duration-300 ease-in ${
-                  open ? "rotate-180" : "rotate-0"
-                }`}
-              />
-            </button>
-          </Tippy>
+          <button onClick={() => setOpen(!open)}>
+            <ExpandMore
+              sx={{ fontSize: 25 }}
+              className={`ml-1 transition-all duration-300 ease-in ${
+                open ? "rotate-180" : "rotate-0"
+              }`}
+            />
+          </button>
         </div>
         <div
           ref={contentRef}
@@ -52,3 +41,5 @@ export const AddressAccordian: React.FC<AddressInputProps> = ({
     </div>
   )
 }
+
+export default AddressAccordian

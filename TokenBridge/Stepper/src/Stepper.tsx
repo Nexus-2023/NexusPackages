@@ -2,7 +2,7 @@ import * as React from "react"
 import { Box, Stepper, Step, StepLabel, Divider } from "@mui/material"
 
 import { VerticalLinearStepperProps } from "./types/index"
-export function VerticalLinearStepper({
+function VerticalLinearStepper({
   activeStep,
   selectedToken,
   flowMode,
@@ -98,3 +98,4 @@ export function VerticalLinearStepper({
     </Box>
   )
 }
+export default VerticalLinearStepper

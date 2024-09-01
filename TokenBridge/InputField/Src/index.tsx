@@ -1,5 +1,2 @@
-import { AddressInput } from "./AddressInput"
-import { AddressAccordian } from "./AddressAccordian"
-
-export { AddressAccordian }
-export default AddressInput
+export { default as AddressAccordian } from "./AddressAccordian"
+export { default } from "./AddressInput"

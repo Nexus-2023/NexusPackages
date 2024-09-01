@@ -1,6 +1,6 @@
 {
   "name": "nexus-token-input-field",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "input field components to enter address of a blockchain",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

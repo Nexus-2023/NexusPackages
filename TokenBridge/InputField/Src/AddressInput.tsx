@@ -1,7 +1,7 @@
 import React from "react"
 import { AddressInputProps } from "./types/index"
 
-export const AddressInput: React.FC<AddressInputProps> = ({
+const AddressInput: React.FC<AddressInputProps> = ({
   label,
   address,
   handleAddress,
@@ -30,3 +30,5 @@ export const AddressInput: React.FC<AddressInputProps> = ({
     </div>
   )
 }
+
+export default AddressInput

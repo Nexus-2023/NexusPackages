@@ -1,3 +1,1 @@
-import { VerticalLinearStepper } from "./Stepper"
-
-export default VerticalLinearStepper
+export { default } from "./Stepper"
